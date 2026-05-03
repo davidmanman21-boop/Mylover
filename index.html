@@ -171,8 +171,18 @@
 
   <script src="script.js"></script>
 <audio controls>
+<audio id="bg-music" autoplay loop muted>
   <source src="music/song.mp3" type="audio/mpeg">
 </audio>
 
+<script>
+  const audio = document.getElementById("bg-music");
+
+  // Unmute after user clicks anywhere
+  document.addEventListener("click", () => {
+    audio.muted = false;
+    audio.play();
+  });
+</script>
 </body>
 </html>
