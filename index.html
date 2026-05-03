@@ -66,20 +66,36 @@
         <h2 id="letter-title">A message from my heart</h2>
       </div>
 
-      <article class="love-letter">
-        <p>My love,</p>
-        <p>
-          Happy 19th birthday to the woman who makes me the happiest man on earth.
-          I would rather spend eternity with you than anything else in the world. You get me excited to wake up each morning and each day. I Thank heaven above that they gave me one of their precious angels to have as my own. 
-        </p>
-        <p> I will always choose you, and I know that you will choose me too. i love you beyond what i can express to you, but i hope to show you more and more each day. The way my heart yearns for it's other half being you and only you is beyond words.</p>
-        <p>
-          I hope we live the rest of our lives together happily ever after in our own little fairy tale.
-          You are my reason and the thing that keeps me pushing through my troubles, i love you more and more every day... my forever baby, mylove, my Andra.
-          
-        </p>
-        <p class="signature">Forever yours, Your Puatama.</p>
-      </article>
+      <div class="letter-lock-wrap is-locked" id="letterLock">
+        <article class="love-letter" id="loveLetterContent" aria-hidden="true">
+          <p>My love,</p>
+          <p>
+            Happy 19th birthday to the woman who makes me the happiest man on earth.
+            I would rather spend eternity with you than anything else in the world. You get me excited to wake up each morning and each day. I Thank heaven above that they gave me one of their precious angels to have as my own.
+          </p>
+          <p> I will always choose you, and I know that you will choose me too. i love you beyond what i can express to you, but i hope to show you more and more each day. The way my heart yearns for it's other half being you and only you is beyond words.</p>
+          <p>
+            I hope we live the rest of our lives together happily ever after in our own little fairy tale.
+            You are my reason and the thing that keeps me pushing through my troubles, i love you more and more every day... my forever baby, mylove, my Andra.
+
+          </p>
+          <p class="signature">Forever yours, Your Puatama.</p>
+        </article>
+
+        <form class="letter-gate" id="letterGate" aria-label="Unlock birthday letter">
+          <div class="lock-mark" aria-hidden="true">
+            <span class="lock-shackle"></span>
+            <span class="lock-body">♡</span>
+          </div>
+          <p class="gate-eyebrow">Locked letter</p>
+          <label for="letterPassword">Password</label>
+          <div class="password-row">
+            <input id="letterPassword" name="letterPassword" type="password" inputmode="numeric" autocomplete="off" maxlength="4" aria-describedby="letterError">
+            <button class="unlock-button" type="submit">Open</button>
+          </div>
+          <p class="letter-error" id="letterError" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
 
     <section class="section memories-section" id="memories" aria-labelledby="memories-title">
